@@ -42,6 +42,6 @@ body:
     attributes:
       label: What are the details of your suggestion?
       description: Explain what you want.
-      placeholder: "Tell us what you see!"
+      placeholder: "Feature details!"
     validations:
       required: false
