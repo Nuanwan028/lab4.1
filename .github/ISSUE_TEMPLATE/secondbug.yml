@@ -1,0 +1,53 @@
+name: Second Bug Report
+description: File a bug report.
+title: "[Feature]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: What is your name?
+      placeholder: ex. Seettha Taweewattana
+      attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+    validations:
+      required: false
+
+  - type: dropdown
+    id: request
+    attributes:
+      label: Type of request
+      description: Select the type of your request
+      options:
+        - New feature
+        - Bug
+      default: 0
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: What is the OS which you want to suggest?
+      multiple: true
+      options:
+        - Window
+        - MAc
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What are the detail of your suggestion?
+      description: explain what do you want
+      placeholder: Tell us what you see!
+      value: "Feature details!"
+    validations:
+      required: false
