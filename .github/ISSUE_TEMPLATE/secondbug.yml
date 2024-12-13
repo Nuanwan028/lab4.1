@@ -1,8 +1,8 @@
 name: Second Bug Report
 description: File a bug report.
 title: "[Feature]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+labels: []
+projects: []
 assignees:
   - octocat
 body:
@@ -11,10 +11,7 @@ body:
     attributes:
       label: Contact Details
       description: What is your name?
-      placeholder: ex. Seettha Taweewattana
-      attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      placeholder: "ex. Seettha Taweewattana"
     validations:
       required: false
 
@@ -26,7 +23,6 @@ body:
       options:
         - New feature
         - Bug
-      default: 0
     validations:
       required: false
 
@@ -36,15 +32,16 @@ body:
       label: What is the OS which you want to suggest?
       multiple: true
       options:
-        - Window
-        - MAc
+        - Windows
+        - Mac
+    validations:
+      required: false
 
   - type: textarea
     id: what-happened
     attributes:
-      label: What are the detail of your suggestion?
-      description: explain what do you want
-      placeholder: Tell us what you see!
-      value: "Feature details!"
+      label: What are the details of your suggestion?
+      description: Explain what you want.
+      placeholder: "Tell us what you see!"
     validations:
       required: false
